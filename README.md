@@ -20,7 +20,7 @@ This project implements an end-to-end data pipeline for processing and analyzing
 ## Data Model
 
 TLC Trip Record Data Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
-![architecture](https://github.com/sahilbishnoi26/Uber-GCP-ELT-pipeline/blob/main/data_model.jpg)
+![architecture](https://github.com/sahilbishnoi26/Uber-GCP-ELT-pipeline/blob/main/data_model.jpeg)
 
 ## Setup & Execution
 1. **Provision Resources**
