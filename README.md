@@ -49,14 +49,3 @@ This project implements an end-to-end data pipeline for processing and analyzing
 - Enhance transformations for deeper insights
 - Optimize query performance in BigQuery
 
-## Repository Structure
-```
-/
-│-- mage_pipeline/           # Mage ELT configurations
-│-- sql_queries/             # BigQuery SQL scripts
-│-- data_samples/            # Sample datasets
-│-- visualization/           # Looker Studio setup
-│-- README.md                # Project documentation
-```
-
-
