@@ -4,6 +4,7 @@
 This project implements an end-to-end data pipeline for processing and analyzing ecommerce customer data using Google Cloud services, Mage for ELT, and BigQuery for storage and querying.
 
 ## Architecture
+![architecture](https://github.com/sahilbishnoi26/Uber-GCP-ELT-pipeline/blob/main/architecture.jpg)
 - **Data Source**: Sample ecommerce customer data stored in a PostgreSQL database.
 - **Extract & Load (ELT)**: Mage orchestrates data extraction from PostgreSQL and loads it into Google Cloud Storage (GCS) as Parquet files.
 - **Data Transformation**: Mage processes and cleans the data before writing it to BigQuery.
@@ -15,6 +16,11 @@ This project implements an end-to-end data pipeline for processing and analyzing
 - **Mage**: Open-source ELT tool for data orchestration
 - **PostgreSQL**: Source database
 - **Google Looker Studio**: Data visualization
+
+## Data Model
+
+TLC Trip Record Data Yellow and green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+![architecture](https://github.com/sahilbishnoi26/Uber-GCP-ELT-pipeline/blob/main/data_model.jpg)
 
 ## Setup & Execution
 1. **Provision Resources**
