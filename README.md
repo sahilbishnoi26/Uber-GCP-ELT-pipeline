@@ -1,2 +1,62 @@
 # Uber-GCP-ELT-pipeline
-End-to-end data pipeline for processing and analyzing ecommerce customer data using Google Cloud, Mage, and BigQuery.
+
+## Overview
+This project implements an end-to-end data pipeline for processing and analyzing ecommerce customer data using Google Cloud services, Mage for ELT, and BigQuery for storage and querying.
+
+## Architecture
+- **Data Source**: Sample ecommerce customer data stored in a PostgreSQL database.
+- **Extract & Load (ELT)**: Mage orchestrates data extraction from PostgreSQL and loads it into Google Cloud Storage (GCS) as Parquet files.
+- **Data Transformation**: Mage processes and cleans the data before writing it to BigQuery.
+- **Storage & Querying**: BigQuery serves as the data warehouse for analysis.
+- **Visualization**: Google Looker Studio is used for dashboarding and insights.
+
+## Tools & Technologies
+- **Google Cloud Platform (GCP)**: Cloud Storage, BigQuery
+- **Mage**: Open-source ELT tool for data orchestration
+- **PostgreSQL**: Source database
+- **Google Looker Studio**: Data visualization
+
+## Setup & Execution
+1. **Provision Resources**
+   - Set up a Google Cloud project.
+   - Enable Cloud Storage and BigQuery.
+   - Create a service account with necessary permissions.
+
+2. **Configure PostgreSQL**
+   - Ensure the database is accessible.
+   - Prepare customer transaction data.
+
+3. **Set Up Mage**
+   - Install and configure Mage.
+   - Create a pipeline to extract data from PostgreSQL and load it into GCS.
+
+4. **Transform and Load into BigQuery**
+   - Define transformation steps in Mage.
+   - Load processed data into BigQuery tables.
+
+5. **Analyze and Visualize**
+   - Use SQL queries in BigQuery for analysis.
+   - Connect BigQuery to Looker Studio for reporting.
+
+## Key Features
+- Automated ELT pipeline with Mage
+- Scalable data storage using BigQuery
+- Efficient data transformation and cleansing
+- Visualization with Looker Studio
+
+## Future Improvements
+- Implement real-time data ingestion
+- Enhance transformations for deeper insights
+- Optimize query performance in BigQuery
+
+## Repository Structure
+```
+/
+│-- mage_pipeline/           # Mage ELT configurations
+│-- sql_queries/             # BigQuery SQL scripts
+│-- data_samples/            # Sample datasets
+│-- visualization/           # Looker Studio setup
+│-- README.md                # Project documentation
+```
+
+
